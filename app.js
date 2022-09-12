@@ -1,32 +1,20 @@
 //Consts and vars
 const container = document.getElementById("container")
 let rows = document.getElementsByClassName("gridRow")
-let cells = document.getElementsByClassName("cell")
+let cells = document.getElementsByClassName("gridCol")
+container.style.gridTemplateColumns = "repeat(16, 1fr)"
+container.style.gridTemplateRows = "repeat(16, 1fr)"
 
-
-function defaultGrid() {
-    makeRows(16);
-    makeColumns(16);
-}
-
-
-//Creates rows
-function makeRows(num) {
-   
-    for(r = 0; r < num; r++) {
-        let row = document.createElement("div");
-        container.appendChild(row).className = "gridRow";
-
+function createDivs(col, rows) {
+    
+    for(i = 0; i < (col * rows); i++){
+       const div = document.createElement("div")
+       container.appendChild(div).classList.add("box")
+      
     }
 }
 
-//Creates columns
-function makeColumns(num) {
+createDivs(16,16);
 
-    for(i = 0; i < rows.length; i++) {
-        for( j = 0; j < num;  j++) {
-           let newCell = document.createElement("div");
-           rows[j].appendChild(newCell).className = "cell";
-        };
-    };
-};
+
+
