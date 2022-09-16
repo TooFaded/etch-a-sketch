@@ -50,6 +50,7 @@ button {
   border-radius: 25px;
   border: 3px solid gold;
   box-shadow: 2px 6px;
+  font-weight: bold;
   
 }
 
@@ -74,6 +75,16 @@ h1 {
 
 }
 
+h2 {
+  font-family: 'Nabla', cursive;
+  background-color: red;
+}
+
+.resetBtn {
+  position: relative;
+  top: 45px;
+ 
+}
 
 
 
