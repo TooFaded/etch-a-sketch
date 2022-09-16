@@ -6,22 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="app.js" defer></script>
     <link rel="stylesheet" href="styles.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
     <title>Etch-a-Sketch</title>
+
 
 </head>
 <body>
-    <div class="section">
-    <div id="container"></div>
+<div class="section">
+     <h1>Etch-a-Sketch</h1>
+     <div class="resizeInput"><span id="currentSize">16 X</span><input size="2" type="text" placeholder="Size" value="16" onchange="changeSize(this.value)"/>
+            <button>Resize</button>
+    </div>
+<div id="container"></div>
     <div class="buttons">
-        <button>Red</button>
-        <button>Blue</button>
-        <button>Black</button>
+        <button onclick="changeColor('red')">Red</button>
+        <br>
+        <button onclick="changeColor('blue')">Blue</button>
+        <br>
+        <button onclick="changeColor('green')">Green</button>
+        <br>
+        <button onclick="changeColor('yellow')">Yellow</button>
+        <br>
+        <button onclick="changeColor('orange')">Orange</button>
+        <br>
+        <button onclick="changeColor('purple')">Purple</button>
+        <br>
+        <button onclick="changeColor('black')">Black</button>
+        <br>
+        <button class="eraseBtn" onclick="changeColor('white')"><img src="remove.png"></button>
+        <br>
+        <button onclick="resetCanvas()">Reset</button>
     </div>
-    <div><input type="text" placeholder="Board Size" value="16" onchange="changeSize(this.value)"/>
-    <button>Resize</button>
     
-    </div>
-    </div>
+</div>
     
 
 
