@@ -27,11 +27,11 @@
 }
 
 .buttons {
-width: 80px;
-height:30px;
+padding: 20px;
+border-radius: 20px;
 position: absolute;
-left: 550px;
-top: 450px;
+left: 15px;
+background-color: black;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
@@ -80,11 +80,6 @@ h2 {
   background-color: red;
 }
 
-.resetBtn {
-  position: relative;
-  top: 45px;
- 
-}
 
 
 
